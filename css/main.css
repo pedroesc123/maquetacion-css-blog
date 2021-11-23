@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+
+body {
+    font-family: "Roboto Mono", monospace;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+
+.home-body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.grid-container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+header .header-icons-container {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: #47cfac;
+}
+
+header .header-icons-container .icons {
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    margin-right: 50px;
+}
+
+header .icons span {
+    color: white;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+}
+
+nav .nav-logo-container {
+    margin-left: 50px;
+}
+
+nav .nav-logo-container a img {
+    width: 220px;
+    margin-top: 10px;
+}
+
+nav .profile-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+nav .profile-link a {
+    color: black;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+.cover-image {
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/img/Cover.png");
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+}
+
+.cover-image h1 {
+    color: white;
+    font-size: 5rem;
+    margin-bottom: 100px;
+    font-family: "Roboto mono", monospace;
+}
+
+.cover-image button {
+    background-color: #47cfac;
+    width: 150px;
+    height: 60px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    justify-self: center;
+    margin-bottom: 400px;
+}
+
+.blogs-main {
+    display: grid;
+}
+
+.blogs-news-container {
+    background-color: #e6e9ed;
+    padding: 0 50px 40px;
+}
+
+.blogs-main-new {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+}
+
+.blogs-news-img-container {
+    grid-column: 1;
+}
+
+.blogs-news-img-container img{
+    width: 85%;
+}
+
+.blogs-news-info-container {
+    grid-column: 2;
+}
+
+.blogs-news-info-container p {
+    margin-bottom: 35px;
+}
+
+.blogs-posts-container {
+    padding: 0 50px 40px;
+}
+
+.blogs-posts-container h3 {
+    width: 100%;
+    border-bottom: 1px solid #cdd2da;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.blogs-button {
+    border: 1px solid #47cfac;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.blogs-button:hover {
+    cursor: pointer;
+}
+
+.post-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 300px));
+    gap: 50px;
+    justify-content: center;
+}
+
+.post-container div img {
+    width: 100%;
+    /* height: 100%;
+    object-fit: contain; */
+}
+
+.post-container div p {
+    text-align: justify;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #22272d;
+    border-top: 35px solid #47cfac;
+}
+
+footer p {
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.blogpost-img-container img {
+    width: 100%;
+    background-size: cover;
+}
+
+.grid-container h3 {
+    border-bottom: 1px solid gray;
+}
+
+.grid-container article h1 {
+    font-size: 2rem;
+}
+
+.contact-main-container {
+    width: 100%;
+    min-height: 250px;
+    background-color: #e6e9ed;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.contact-main-container div{
+    display: inline-block;
+    width: 49.5%;
+    height: 100%;
+}
+
+.contact-main-container div a {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+.contact-main-container .contact-left, .contact-right {
+    text-align: initial;
+    margin-top: 85px;
+}
+
+.contact-main-container img {
+    width: 100px;
+}
+
+.presentation-container {
+    display: grid;
+    padding: 0 100px 40px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    background-color: #e6e9ed;
+    place-items: center;
+}
+
+.presentation-container div {
+    display: grid;
+}
+
+.presentation-container div img {
+    width: 80%;
+    padding-top: 50px;
+    place-self: center;
+}
+
+.title-projects {
+    text-align: center;
+    border-bottom: 1px solid gray;
+} 
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 350px));
+    gap: 80px;
+    place-content: center;
+    margin-bottom: 50px;
+}
+
+.project p {
+    text-align: justify;
+}
